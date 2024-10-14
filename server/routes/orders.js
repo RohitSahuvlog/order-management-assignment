@@ -6,7 +6,7 @@ const User = require('../models/User');
 const Product = require('../models/Product');
 
 // Get users with failed payments on a specific date in a specific city
-router.get('/failed-orders', async (req, res) => {
+router.get('/fetch-orders', async (req, res) => {
     const { city, orderDate, status } = req.query;
 
     try {
